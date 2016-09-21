@@ -13,5 +13,15 @@ namespace code_test.Controllers
         {
             return View();
         }
+
+        static bool GetTenFriendly(string input)
+        {
+            bool result = false; 
+            if (input.Length < 1)//something here
+            {
+                result = true;
+            }
+            return result; 
+        }
     }
 }

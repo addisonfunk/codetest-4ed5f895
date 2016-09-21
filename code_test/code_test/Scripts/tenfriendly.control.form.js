@@ -5,4 +5,10 @@ $(document).ready(function () {
         alert('test');
     });
 
+    formDataService.getTenFriendly(input, getTenFriendlyCallback);
+
+    function getTenFriendlyCallback(input) {
+        console.log(input);
+    }; 
+
 }); 
