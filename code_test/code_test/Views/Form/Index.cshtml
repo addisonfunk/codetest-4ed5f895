@@ -12,7 +12,7 @@
 <body>
     <div class="row">
         <div class="col-md-6 col-lg-offset-3">
-            <h2>Enter a number below to see all the Ten-Friendly substrings.</h2>
+            <h2>Enter a substring below to see if your list is ten-friendly.</h2>
             <input type="text" id="friendly-input" />
             <button class="btn-default btn-group-lg" type="submit" id="friendly-go-btn">Go!</button>
         </div>
@@ -21,7 +21,9 @@
 
     <div class="row">
         <div class="col-md-6 col-lg-offset-3">
-            <div id="ten-friendly-list" style="display: none"></div>
+            <div id="ten-friendly-list-rules" style="display: none">Be sure to only test a string of numbers and don't include spaces.</div>
+            <div id="ten-friendly-list-true" style="display: none">Your list is ten-friendly!</div>
+            <div id="ten-friendly-list-false" style="display: none">Your list is not ten-friendly.</div>
         </div>
     </div>
 </body>
