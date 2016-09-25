@@ -14,14 +14,16 @@ namespace code_test.Controllers
             return View();
         }
 
-        static bool GetTenFriendly(string input)
+
+
+        public ActionResult GetTenFriendly(string input)
         {
-            bool result = false; 
+            var result = input; 
             if (input.Length < 1)//something here
             {
-                result = true;
+                result = input;
             }
-            return result; 
+            return Json(result); 
         }
     }
 }

@@ -5,9 +5,10 @@
         $.ajax({
             async: true,
             dataType: 'json',
+            type: 'POST',
             url: base + 'GetTenFriendly',
             data: { input: input },
-            success: function (data) { callback(data) }
+            success: function (data) {  callback(data) }
         });
     };
 

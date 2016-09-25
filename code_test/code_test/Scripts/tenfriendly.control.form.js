@@ -1,11 +1,11 @@
-﻿console.log("testing 1"); 
+﻿
 $(document).ready(function () {
-    console.log("testing 2");
-    $("#friendly-test-btn").on("click", function () {
-        alert('test');
-    });
 
-    formDataService.getTenFriendly(input, getTenFriendlyCallback);
+    $("#friendly-go-btn").on("click", function () {
+        console.log($("#friendly-input").val());
+        var input = $("#friendly-input").val();
+        formDataService.getTenFriendly(input, getTenFriendlyCallback);
+    });
 
     function getTenFriendlyCallback(input) {
         console.log(input);
