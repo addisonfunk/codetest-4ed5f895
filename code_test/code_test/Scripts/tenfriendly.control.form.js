@@ -16,6 +16,7 @@
     });
 
     function getTenFriendlyCallback(input) {
+        var result; 
         var sum = 0;
         for (i = 0; i < input.length; i++) {
             sum += Number(input[i]);
@@ -27,7 +28,8 @@
             friendly.show();
             setTimeout(function () {
                 friendly.hide();
-            }, 5000); 
+            }, 5000);
+            result = true;
         } else {
             var notFriendly = $("#ten-friendly-list-false");
             if (notFriendly.is(":visible")) { return; }
@@ -35,7 +37,12 @@
             setTimeout(function () {
                 notFriendly.hide();
             }, 5000);
+            result = false; 
         }
+        return result; 
     }; 
+
+
+    //TESTING s
 
 }); 
