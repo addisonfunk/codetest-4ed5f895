@@ -1,0 +1,39 @@
+﻿@{
+    ViewBag.Title = "Ten Friendly";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Ten Friendly Test</title>
+    <link href="~/Content/qunit.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="row">
+        <div class="col-md-6 col-lg-offset-3">
+            <h2>Enter a substring below to see if your list is ten-friendly.</h2>
+            <input type="text" id="friendly-input" />
+            <button class="btn-default btn-group-lg" type="submit" id="friendly-go-btn">Go!</button>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-6 col-lg-offset-3">
+            <div id="ten-friendly-list-rules" style="display: none">Be sure to only test a string of numbers and don't include spaces.</div>
+            <div id="ten-friendly-list-true" style="display: none">Your list is ten-friendly!</div>
+            <div id="ten-friendly-list-false" style="display: none">Your list is not ten-friendly.</div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+<script src="~/Scripts/libraries/jquery-3.1.0.min.js"></script>
+<script src="~/Scripts/tenfriendly.control.form.js"></script>
+<link href="~/Content/qunit.css" rel="stylesheet" />
+<script src="~/Scripts/qunit.js"></script>
+<script src="~/Scripts/Spec/tenfriendly.spec.js"></script>
+<script src="~/Scripts/bootstrap.js"></script>
