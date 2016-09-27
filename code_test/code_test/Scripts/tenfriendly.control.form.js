@@ -41,8 +41,4 @@
         }
         return result; 
     }; 
-
-
-    //TESTING s
-
 }); 
